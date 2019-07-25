@@ -58,14 +58,28 @@ h1 {
 }
 
 .projectWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin: 0 0 3em 0;
 }
 
 article {
-    background-image: url("profielfoto.jpg");
     margin-bottom: 1em;
+    box-shadow: 0 22px 24px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#pm {
+    background-image: url("PM.png");
+}
+
+#laadpalen {
+    background-image: url("laadpalen.png");
+}
+
+#bbb {
+    background-image: url("bbb.png");
 }
 
 h4 {
@@ -73,6 +87,54 @@ h4 {
 }
 
 .projectContainer {
-    padding: 1em;
-    background-color: rgba(41, 40, 40, 0.8);
+    height: 100%;
+    padding: 2em;
+    background-color: rgba(41, 40, 40, 0.7);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    p {
+        max-width: 60vw;
+    }
+    .projectWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1080px) {
+    .projectWrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.button {
+    text-align: center;
+    background-color: white;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    border: 1px solid white;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px lightblue;
+}
+
+.button:hover {
+    background-color: lightblue;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.social {
+    list-style: none;
 }
