@@ -1,0 +1,40 @@
+body {
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    max-height: 5em;
+    display: flex;
+    padding: .5em;
+}
+
+header nav {
+    max-height: 5em;
+    padding-top: 2.5em;
+    margin-left: auto
+}
+
+nav a {
+    margin-left: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    max-width: 5em;
+    max-height: 5em;
+    border-radius: 50%
+}
+
+section {
+    padding: 1em;
+    color: white;
+    height: 100vh;
+}
+
+.black {
+    color: black;
+}
