@@ -8,7 +8,7 @@ body {
 header {
     max-height: 5em;
     display: flex;
-    padding: .5em;
+    padding: 1em;
 }
 
 header nav {
@@ -30,11 +30,49 @@ header img {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     padding: 1em;
     color: white;
-    height: 100vh;
+    min-height: 80vh;
 }
 
 .black {
     color: black;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0;
+}
+
+.lightgrey {
+    margin-top: auto;
+    text-align: right;
+    color: darkgray;
+}
+
+.title {
+    border-bottom: 1px solid white;
+}
+
+.projectWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    background-image: url("profielfoto.jpg");
+    margin-bottom: 1em;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+.projectContainer {
+    padding: 1em;
+    background-color: rgba(41, 40, 40, 0.8);
 }
