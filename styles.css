@@ -1,140 +1,178 @@
 body {
-    background-color: lightblue;
-    padding: 0;
-    margin: 0;
-    font-family: 'Overpass', sans-serif;
+  background-color: lightblue;
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
 }
 
 header {
-    max-height: 5em;
-    display: flex;
-    padding: 1em;
+  max-height: 5em;
+  display: flex;
+  padding: 1em;
 }
 
 header nav {
-    max-height: 5em;
-    padding-top: 2.5em;
-    margin-left: auto
+  max-height: 5em;
+  margin-left: auto;
 }
 
 nav a {
-    margin-left: 1em;
-    text-decoration: none;
-    color: white;
+  margin-left: 1em;
+  text-decoration: none;
+  color: white;
 }
 
-header img {
-    max-width: 5em;
-    max-height: 5em;
-    border-radius: 50%
+main img {
+  max-width: 10em;
+  max-height: 10em;
+  border-radius: 50%;
+  margin-right: 0em;
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  color: white;
+  min-height: 80vh;
+}
+
+/* .banner {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  color: white;
+  min-height: 80vh;
+} */
+
+.black {
+  color: black;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+.lightgrey {
+  margin-top: auto;
+  text-align: right;
+  color: darkgray;
+}
+
+.title {
+  border-bottom: 1px solid white;
+}
+
+.projectWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  margin: 0 0 3em 0;
+}
+
+article {
+  margin-bottom: 1em;
+  box-shadow: 0 22px 24px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+#pm {
+  background-image: url("PM.png");
+}
+
+#laadpalen {
+  background-image: url("laadpalen.png");
+}
+
+#bbb {
+  background-image: url("bbb.png");
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.projectContainer {
+  height: 100%;
+  padding: 2em;
+  background-color: rgba(41, 40, 40, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  p {
+    max-width: 60vw;
+  }
+  .projectWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1080px) {
+  .projectWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main img {
+    max-width: 30em;
+    max-height: 30em;
+    margin-right: 5em;
+  }
+
+  section,
+  .bannerText {
     display: flex;
     flex-direction: column;
     padding: 1em;
     color: white;
     min-height: 80vh;
-}
+  }
 
-.black {
-    color: black;
-}
+  .bannerText {
+    padding-top: 8em;
+  }
 
-h1 {
-    font-size: 3em;
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 0;
-}
-
-.lightgrey {
-    margin-top: auto;
-    text-align: right;
-    color: darkgray;
-}
-
-.title {
-    border-bottom: 1px solid white;
-}
-
-.projectWrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em;
-    margin: 0 0 3em 0;
-}
-
-article {
-    margin-bottom: 1em;
-    box-shadow: 0 22px 24px 0 rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
-
-#pm {
-    background-image: url("PM.png");
-}
-
-#laadpalen {
-    background-image: url("laadpalen.png");
-}
-
-#bbb {
-    background-image: url("bbb.png");
-}
-
-h4 {
-    margin-top: 0;
-}
-
-.projectContainer {
-    height: 100%;
-    padding: 2em;
-    background-color: rgba(41, 40, 40, 0.7);
+  .banner {
     display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    p {
-        max-width: 60vw;
-    }
-    .projectWrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 1080px) {
-    .projectWrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    flex-direction: row;
+    padding: 1em;
+    color: white;
+    min-height: 80vh;
+  }
 }
 
 .button {
-    text-align: center;
-    background-color: white;
-    -moz-border-radius: 28px;
-    -webkit-border-radius: 28px;
-    border-radius: 28px;
-    border: 1px solid white;
-    display: inline-block;
-    cursor: pointer;
-    color: black;
-    font-family: Arial;
-    font-size: 17px;
-    padding: 16px 31px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px lightblue;
+  text-align: center;
+  background-color: white;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 1px solid white;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px lightblue;
+}
+
+.emailButton {
+  width: 10em;
 }
 
 .button:hover {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .button:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 .social {
-    list-style: none;
+  list-style: none;
 }
